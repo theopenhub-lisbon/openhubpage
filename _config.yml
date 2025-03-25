@@ -1,1 +1,5 @@
-theme: minima
+title: The (open) Hub in Lisboa
+baseurl: "" # if its root
+url: ""     # if you are testing locally
+markdown: kramdown
+plugins: []

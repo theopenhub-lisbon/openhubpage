@@ -36,6 +36,7 @@ h3 {
 }
 
 /* Buttons */
+/* Gold Button */
 .btn-gold {
   display: inline-block;
   background-color: #FCBF00;
@@ -44,12 +45,15 @@ h3 {
   border-radius: 9999px;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 .btn-gold:hover {
-  background-color: #009FE3;
+  background-color: #d6a600; /* darker gold */
+  box-shadow: 0 4px 10px rgba(252, 191, 0, 0.4);
+  transform: scale(1.03);
 }
 
+/* Blue Button */
 .btn-blue {
   display: inline-block;
   background-color: #009FE3;
@@ -58,10 +62,12 @@ h3 {
   border-radius: 9999px;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 .btn-blue:hover {
-  background-color: #FCBF00;
+  background-color: #007fb8; /* deeper blue */
+  box-shadow: 0 4px 10px rgba(0, 159, 227, 0.4);
+  transform: scale(1.03);
 }
 
 /* Cards */
@@ -82,16 +88,16 @@ h3 {
     border-radius: 0.75rem;
     padding: 1.5rem;
     background-color: #262626;
-  }
-  .card:hover {
+}
+.card:hover {
     border-color: #6b7280;
-  }  
+}  
 
 /* Resource Links & Block Links */
 .link-block,
 .resource-link {
   color: #009FE3;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s;
@@ -102,6 +108,7 @@ h3 {
 .link-block:hover,
 .resource-link:hover {
   background-color: #1f1f1f;
+  text-decoration: underline;
 }
 
 /* Icon Links */
